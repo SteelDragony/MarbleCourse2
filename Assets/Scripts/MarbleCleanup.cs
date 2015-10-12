@@ -3,7 +3,7 @@ using System.Collections;
 
 public class MarbleCleanup : MonoBehaviour {
 
-    public float cleanupHeight = -100;
+    public float cleanupHeight = -500;
 
 	// Use this for initialization
 	void Start () {

@@ -26,4 +26,13 @@ public class Whirlwind : MonoBehaviour {
             rb.AddForce(toCenter * power);
         }
     }
+    
+    void OnTriggerEnter(Collider other)
+    {
+        TrailRenderer trial = other.gameObject.GetComponent<TrailRenderer>();
+        if(trial != null)
+        {
+            trial.enabled = true;
+        }
+    }
 }
